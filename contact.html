@@ -329,13 +329,15 @@
 
     <!-- JavaScript for Mobile Menu Toggle -->
     <script>
-      document.getElementById("mobileMenuToggle").addEventListener("click", function () {
-        let navMenu = document.getElementById("navbarNav");
-        if (navMenu.classList.contains("show")) {
-          navMenu.classList.remove("show");
-        } else {
-          navMenu.classList.add("show");
-        }
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("mobileMenuToggle").addEventListener("click", function () {
+          let navMenu = document.getElementById("navbarNav");
+          if (navMenu.classList.contains("show")) {
+            navMenu.classList.remove("show");
+          } else {
+            navMenu.classList.add("show");
+          }
+        });
       });
     </script>
 
